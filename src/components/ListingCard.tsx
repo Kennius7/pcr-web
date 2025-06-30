@@ -13,9 +13,10 @@ type ListingCardProps = {
 
 export default function ListingCard({ image, title, price, rating, location }: ListingCardProps) {
     return (
-        <div className="relative min-w-[250px] max-w-[300px] rounded-2xl overflow-hidden shadow-sm">
+        <div className="relative md:min-w-[250px] min-w-[155px] md:max-w-[300px] max-w-[170px] 
+            md:rounded-2xl rounded-lg overflow-hidden shadow-sm">
             {/* Image */}
-            <div className="relative w-full h-48">
+            <div className="relative w-full md:h-48 h-[110px]">
                 <Image
                     src={image}
                     alt={title}

@@ -12,7 +12,9 @@ export default function Navbar() {
             {/* Left: Logo */}
             <div className="flex items-center space-x-2">
                 <Image src="/images/pcr-icon1.png" alt="Perfect Choice Rentals logo" width={30} height={30} />
-                <span className="text-[var(--primary)] font-semibold text-lg">Perfect Choice Rentals</span>
+                <span className="text-[var(--primary)] font-semibold md:text-lg text-[20px]">
+                    Perfect Choice Rentals
+                </span>
             </div>
 
             {/* Center: Search bar */}
@@ -29,8 +31,8 @@ export default function Navbar() {
 
             {/* Right: Buttons */}
             <div className="flex items-center space-x-4">
-                <button className="text-sm font-medium">Become a host</button>
-                <button className="p-2 rounded-full hover:bg-gray-100">
+                <button className="text-sm font-medium md:block hidden">Become a host</button>
+                <button className="p-2 rounded-full hover:bg-gray-100 md:block hidden">
                     <Globe size={18} />
                 </button>
                 <button 
